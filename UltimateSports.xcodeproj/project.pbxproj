@@ -11,6 +11,12 @@
 		498032762C4BCF2100256F91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498032752C4BCF2100256F91 /* ContentView.swift */; };
 		498032782C4BCF2200256F91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 498032772C4BCF2200256F91 /* Assets.xcassets */; };
 		4980327B2C4BCF2200256F91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4980327A2C4BCF2200256F91 /* Preview Assets.xcassets */; };
+		498032862C4D008800256F91 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498032852C4D008800256F91 /* TeamsView.swift */; };
+		498032882C4D00FF00256F91 /* TeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498032872C4D00FF00256F91 /* TeamRowView.swift */; };
+		4980328A2C4D01E800256F91 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498032892C4D01E800256F91 /* NetworkService.swift */; };
+		4980328C2C4D02CD00256F91 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980328B2C4D02CD00256F91 /* APIService.swift */; };
+		4980328E2C4D031400256F91 /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980328D2C4D031400256F91 /* TeamModel.swift */; };
+		498032902C4D078F00256F91 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4980328F2C4D078F00256F91 /* TeamsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		498032752C4BCF2100256F91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		498032772C4BCF2200256F91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4980327A2C4BCF2200256F91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		498032852C4D008800256F91 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsView.swift; sourceTree = "<group>"; };
+		498032872C4D00FF00256F91 /* TeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRowView.swift; sourceTree = "<group>"; };
+		498032892C4D01E800256F91 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		4980328B2C4D02CD00256F91 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4980328D2C4D031400256F91 /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
+		4980328F2C4D078F00256F91 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		498032722C4BCF2100256F91 /* UltimateSports */ = {
 			isa = PBXGroup;
 			children = (
+				498032842C4D005D00256F91 /* ViewModel */,
+				498032832C4D005400256F91 /* Model */,
+				498032822C4D004C00256F91 /* Network */,
+				498032812C4D004200256F91 /* View */,
 				498032732C4BCF2100256F91 /* UltimateSportsApp.swift */,
-				498032752C4BCF2100256F91 /* ContentView.swift */,
 				498032772C4BCF2200256F91 /* Assets.xcassets */,
 				498032792C4BCF2200256F91 /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				4980327A2C4BCF2200256F91 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		498032812C4D004200256F91 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				498032752C4BCF2100256F91 /* ContentView.swift */,
+				498032852C4D008800256F91 /* TeamsView.swift */,
+				498032872C4D00FF00256F91 /* TeamRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		498032822C4D004C00256F91 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				498032892C4D01E800256F91 /* NetworkService.swift */,
+				4980328B2C4D02CD00256F91 /* APIService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		498032832C4D005400256F91 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4980328D2C4D031400256F91 /* TeamModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		498032842C4D005D00256F91 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4980328F2C4D078F00256F91 /* TeamsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4980328A2C4D01E800256F91 /* NetworkService.swift in Sources */,
+				498032862C4D008800256F91 /* TeamsView.swift in Sources */,
 				498032762C4BCF2100256F91 /* ContentView.swift in Sources */,
+				498032882C4D00FF00256F91 /* TeamRowView.swift in Sources */,
+				4980328E2C4D031400256F91 /* TeamModel.swift in Sources */,
+				498032902C4D078F00256F91 /* TeamsViewModel.swift in Sources */,
+				4980328C2C4D02CD00256F91 /* APIService.swift in Sources */,
 				498032742C4BCF2100256F91 /* UltimateSportsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
