@@ -32,9 +32,7 @@ struct TeamRowView: View {
         }
         .padding(.horizontal, 20)
         .frame(height: 100)
-        .onAppear(perform: {
-            print("\(team?.strLogo ?? "")/small")
-        })
+        
         
     }
         

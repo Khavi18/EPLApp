@@ -17,4 +17,11 @@ struct APIService {
             completion(result)
         }
     }
+    
+    func getEvents(season: String, completion: @escaping (Result<EventsResponse, Error>) -> Void) {
+        NetworkService.shared.fetchRequest(generalType: EventsResponse.self,
+                                           url: "api/v1/json/3/eventsround.php?id=4328&r=38&s=\(season)") { result in
+            completion(result)
+        }
+    }
 }

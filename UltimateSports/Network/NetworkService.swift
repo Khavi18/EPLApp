@@ -25,7 +25,6 @@ struct NetworkService {
             completion(.failure(NetworkError.badUrl))
             return
         }
-        print(urlString)
         
         let request = URLRequest(url: urlString)
         URLSession.shared.dataTask(with: request){ (data, response, error) in

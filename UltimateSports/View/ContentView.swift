@@ -15,9 +15,9 @@ struct ContentView: View {
                     Text("Teams")
                 }
             
-            Text("Events")
+            SeasonsView()
                 .tabItem {
-                    Text("Events")
+                    Text("Seasons")
                 }
             
             Text("Table")
