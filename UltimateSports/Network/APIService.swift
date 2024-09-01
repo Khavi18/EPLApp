@@ -24,4 +24,11 @@ struct APIService {
             completion(result)
         }
     }
+    
+    func getLookUpTable(season: String, completion: @escaping (Result<LookUpTableResponse, Error>) -> Void) {
+        NetworkService.shared.fetchRequest(generalType: LookUpTableResponse.self,
+                                           url: "api/v1/json/3/lookuptable.php?l=4328&s=\(season)") { result in
+            completion(result)
+        }
+    }
 }

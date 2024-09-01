@@ -20,14 +20,14 @@ struct ContentView: View {
                     Text("Seasons")
                 }
             
-            Text("Table")
+            TablesView()
                 .tabItem {
                     Text("Table")
                 }
             
-            Text("About")
+            AboutsView()
                 .tabItem {
-                    Text("Abouts")
+                    Text("About")
                 }
         }
     }
